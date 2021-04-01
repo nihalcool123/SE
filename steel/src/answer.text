@@ -1,0 +1,8 @@
+1)Explain what does the simple List component does.
+
+Answer)  List component will render the SingleListItem Component for which the props are being passed and for each list item if it gets selected the backgrd colour will be going to chnage red otherwise by default it will be green in color.
+
+
+2)What problems / warnings is there with code?
+Answer)  1)Items are being passed as props in the WrappedListComponent but that item has not been passed from anywhere so items.map will give an error as map of undefined.
+2)items is not defined so proptypes will give an error as well PropTypes.shapeOf text is required
